@@ -1,10 +1,11 @@
 package vn.com.vhc.amazinglunch.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -18,5 +19,17 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer order_id;
 
-    private String 
+    @ManyToOne
+    @JoinColumn(name = "food_id")
+    private Food food_id;
+
+    @ManyToOne
+    @JoinColumn(name = "tableOrder_id")
+    private TableOrder tableOrder_id;
+
+    @CreationTimestamp
+    private LocalDateTime created_at;
+
+    @UpdateTimestamp
+    private LocalDateTime update_at;
 }

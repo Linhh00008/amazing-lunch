@@ -1,34 +1,35 @@
 package vn.com.vhc.amazinglunch.entity;
 
 import jakarta.persistence.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
+@Entity
 @Getter
 @Setter
 @Data
 @Builder
-@AllArgsConstructor
-@Entity
 @NoArgsConstructor
-@Table(name = "users")
-public class User {
+@AllArgsConstructor
+@Table(name = "tableOrder")
+public class TableOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer user_id;
+    private Integer tableOrder_id;
 
     @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role_id;
+    @JoinColumn(name = "restaurant_id")
+    private Restaurant restaurant_id;
 
-    private String username;
+    private String name;
 
-    private String email;
+    private Integer maxPerson;
 
-    private String tokenPassword;
+    private Integer numberCurrentPerson;
 
     @CreationTimestamp
     private LocalDateTime created_at;
