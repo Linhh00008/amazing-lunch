@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ac1b51e-e57e-433f-90a5-40a6f0234af0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hello.java" afterDir="false" />
+    <list default="true" id="f9014a16-9cf5-4877-8be4-fcce370d25c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +19,27 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
         <option value="Class" />
       </list>
     </option>
@@ -27,48 +47,121 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLabMergeRequestFiltersHistory">{
+  &quot;lastFilter&quot;: {
+  }
+}</component>
+  <component name="GitLabMergeRequestsSettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;first&quot;: &quot;https://gitlab.com/trungnq1/amazing-lunch.git&quot;,
+    &quot;second&quot;: &quot;86e37d4e-0bd7-400d-bc37-990755fcd87c&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/50e4f468-90a7-4530-8302-30f1a0935a82_amazing-lunch.zip.a82/amazing-lunch/src/main/java/vn/com/vhc/amazinglunch/repository/UserRepository.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/8ff209ca-3780-46e8-9442-e0e1eccd2cd0_amazing-lunch.zip.cd0/amazing-lunch/src/main/java/vn/com/vhc/amazinglunch/service/UserService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
-  <component name="ProjectId" id="2fD7vTzGzld8h0moFfCCljv1mwU" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bfTzkqepeRBnM71br6xmpfdA63" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/amazing-lunch",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "spring.configuration.checksum": "e10bf0d3829063b6bd83c3be35512254",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="vn.com.vhc.amazinglunch.entity" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AmazingLunchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="amazing-lunch.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="vn.com.vhc.amazinglunch.AmazingLunchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ac1b51e-e57e-433f-90a5-40a6f0234af0" name="Changes" comment="" />
-      <created>1713324029998</created>
+      <changelist id="f9014a16-9cf5-4877-8be4-fcce370d25c1" name="Changes" comment="" />
+      <created>1706605397593</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1713324029998</updated>
-      <workItem from="1713324031536" duration="575000" />
+      <updated>1706605397593</updated>
+      <workItem from="1706605398614" duration="1461000" />
+      <workItem from="1706609770468" duration="1748000" />
+      <workItem from="1706611970347" duration="205000" />
+      <workItem from="1706612366684" duration="102000" />
+      <workItem from="1706668739984" duration="4602000" />
+      <workItem from="1711123360739" duration="33000" />
+      <workItem from="1711523028917" duration="31000" />
+      <workItem from="1712110399707" duration="25000" />
+      <workItem from="1712655591316" duration="81000" />
+      <workItem from="1712655765704" duration="140000" />
+      <workItem from="1712816611996" duration="12537000" />
+      <workItem from="1713022979964" duration="2117000" />
+      <workItem from="1713111099436" duration="1295000" />
+      <workItem from="1713256286344" duration="6217000" />
+      <workItem from="1713263482235" duration="780000" />
+      <workItem from="1713264532430" duration="28000" />
+      <workItem from="1713319810222" duration="751000" />
+      <workItem from="1713322200515" duration="143000" />
+      <workItem from="1713322706103" duration="1049000" />
+      <workItem from="1713325157139" duration="1184000" />
+      <workItem from="1713329171571" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.py" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
