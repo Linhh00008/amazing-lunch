@@ -12,4 +12,14 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User, Integer> {
     @Query(value = "select * from users where user_id = : user_id", nativeQuery = true)
     List<User> findUserWithUserId(@Param("user_id") int user_id);
+
+    User findById(int userId);
+
+    User findByUsername(String username);
+
+    User save(User user);
+
+    User saveAndFlush(User user);
+
+    void delete(User user);
 }

@@ -9,6 +9,7 @@ import vn.com.vhc.amazinglunch.entity.TableOrder;
 import vn.com.vhc.amazinglunch.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Integer> {
@@ -18,4 +19,11 @@ public interface BookingRepository extends JpaRepository<Booking, Integer> {
 
     List<TableOrder> findTableOrderWithTableOrderId(@Param("tableOrder_id") int tableOrder_id);
 
+    Optional<Booking> findBy(String name);
+
+    Booking save(Booking booking);
+
+    Booking saveAndFlush(Booking booking);
+
+    void delete(Booking booking);
 }

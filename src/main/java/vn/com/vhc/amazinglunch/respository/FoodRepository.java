@@ -19,4 +19,11 @@ public interface FoodRepository extends JpaRepository<Food, Integer> {
 
     List<FoodGroup> findFoodGroupWithFoodGroupId(@Param("foodgroup_id") int foodgroup_id);
 
+    Food findByName(String name);
+
+    Food save(Food food);
+
+    Food saveAndFlush(Food food);
+
+    void delete(Food food);
 }
