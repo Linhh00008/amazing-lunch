@@ -28,6 +28,11 @@ public class Restaurant {
 
     private Integer mainBrach;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user_id;
+
+
     @CreationTimestamp
     private LocalDateTime created_at;
 

@@ -16,16 +16,27 @@ public class BookingService {
 
     private final ModelMapper mapper;
 
-    public List<Booking> ListAll(Booking booking_id){
+    public List<Booking> ListAll(){
         return bookingRepository.findAll();
     }
     public Optional<Booking> findById(Integer booking_id){
         return bookingRepository.findById(booking_id);
     }
-    public Booking save(Booking booking_id){
-        return  bookingRepository.save(booking_id);
+    public Booking createBooking(Booking booking) {
+        return bookingRepository.save(booking);
+    }
+    public Booking updateBooking(Integer nooking_id, Booking bookingDetails) {
+        Booking booking = bookingRepository.findById(nooking_id).orElse(null);
+        if (booking != null) {
+            booking.setUpdate_at(bookingDetails.getUpdate_at());
+            // Cập nhật các thông tin khác nếu cần thiết
+            return bookingRepository.save(booking);
+        }
+        return null;
     }
     public void deleteById(Integer booking_id){
         bookingRepository.deleteById(booking_id);
     }
+
+
 }
