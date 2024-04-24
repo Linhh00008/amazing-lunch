@@ -8,7 +8,7 @@ import vn.com.vhc.amazinglunch.service.BookingService;
 
 import java.util.List;
 @RestController
-@RequestMapping("/api/booking")
+@RequestMapping("/api/bookings")
 public class BookingController {
     private BookingService bookingService;
 

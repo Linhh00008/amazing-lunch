@@ -3,6 +3,7 @@ package vn.com.vhc.amazinglunch.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.com.vhc.amazinglunch.entity.Order;
+import vn.com.vhc.amazinglunch.entity.TableOrder;
 import vn.com.vhc.amazinglunch.respository.FoodRepository;
 import vn.com.vhc.amazinglunch.respository.OrderRepository;
 import vn.com.vhc.amazinglunch.entity.Food;
@@ -13,16 +14,14 @@ import java.util.List;
 @Service
 
 public class OrderService {
-    @Autowired
     private OrderRepository orderRepository;
 
-    @Autowired
     private FoodRepository foodRepository;
 
-    public List<Food> getMenu(){
+    public List<Food> getAllOrders(){
         return foodRepository.findAll();
     }
-    public Order addToOrder(Long food_id,OrderItem orderItem) {
+    public Order addToOrder(Integer food_id,OrderItem orderItem) {
         boolean foodExists = foodRepository.existsById(Math.toIntExact(food_id));
         if (!foodExists) {
             throw new NotFoundException("Food not found");
@@ -36,10 +35,24 @@ public class OrderService {
         }
         return userOrder;
     }
+    public Order listAll(Integer Order){
+        return orderRepository.findAll(Order);
+    }
     public class NotFoundException extends RuntimeException {
         public NotFoundException(String message) {
             super(message);
         }
+    }
+    public List<Order> findOrderWithOrderId(int orderId) {
+        return orderRepository.findOrderWithOrderId(orderId);
+    }
+
+    public List<Food> findOrderWithFoodId(int foodId) {
+        return orderRepository.findOrderWithFoodId(foodId);
+    }
+
+    public List<TableOrder> findOrderWithTableOrderId(int tableOrderId) {
+        return orderRepository.findOrderWithTableOrderId(tableOrderId);
     }
 
 }

@@ -23,6 +23,7 @@ public interface OrderRepository extends JpaRepository<Order, Integer> {
 
     List<Customer> findOrderWithCustomerId(@Param("customer_id") int customer_id);
 
+    Order findAll(Integer order);
     Order findById(int order_id);
 
     Order save(Order order);

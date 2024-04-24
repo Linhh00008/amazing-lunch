@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import vn.com.vhc.amazinglunch.entity.Booking;
+import vn.com.vhc.amazinglunch.entity.TableOrder;
+import vn.com.vhc.amazinglunch.entity.User;
 import vn.com.vhc.amazinglunch.respository.BookingRepository;
 
 import java.util.List;
@@ -38,5 +40,19 @@ public class BookingService {
         bookingRepository.deleteById(booking_id);
     }
 
+    public List<Booking> findBookingWithBookingId(int bookingId) {
+        return bookingRepository.findBookingWithBookingId(bookingId);
+    }
+
+    public List<User> findUserWithUserId(int userId) {
+        return bookingRepository.findUserWithUserId(userId);
+    }
+
+    public List<TableOrder> findTableOrderWithTableOrderId(int tableOrderId) {
+        return bookingRepository.findTableOrderWithTableOrderId(tableOrderId);
+    }
+    public Optional<Booking> findByName(String name) {
+        return bookingRepository.findByName(name);
+    }
 
 }

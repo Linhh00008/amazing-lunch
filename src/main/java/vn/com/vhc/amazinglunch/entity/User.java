@@ -35,4 +35,5 @@ public class User {
 
     @UpdateTimestamp
     private LocalDateTime update_at;
+
 }

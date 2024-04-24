@@ -21,5 +21,5 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     User saveAndFlush(User user);
 
-    void delete(User user);
+    void deleteById(Integer user);
 }

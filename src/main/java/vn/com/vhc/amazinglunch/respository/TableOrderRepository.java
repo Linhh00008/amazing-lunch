@@ -14,10 +14,10 @@ public interface TableOrderRepository extends JpaRepository<TableOrder, Integer>
     @Query(value = "select * from tableOrder where tableOrder_id =: tableOrder_id, restaurant_id =: restaurant_id", nativeQuery = true)
     List<TableOrder> findTableOrderWithTableOrderId(@Param("tableOrder_id") int tableOrder_id);
 
-    List<Restaurant> findTableOrderWithRestaurantI(@Param("restaurant_id") int restaurant_id);
+    List<Restaurant> findTableOrderWithRestaurantId(@Param("restaurant_id") int restaurant_id);
     TableOrder findById(TableOrder tableOrder_id);
 
-    TableOrder findByTableNumber(TableOrder numberCurrentPerson);
+    TableOrder findByTableNumber(Integer numberCurrentPerson);
 
-    void delete(TableOrder tableOrder_id);
+    void deleteById(Integer tableOrder_id);
 }

@@ -4,9 +4,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.com.vhc.amazinglunch.entity.Food;
+import vn.com.vhc.amazinglunch.entity.FoodGroup;
+import vn.com.vhc.amazinglunch.entity.Restaurant;
 import vn.com.vhc.amazinglunch.respository.FoodRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -40,5 +43,18 @@ public class FoodService {
     public void deleteFood(Integer food_id){
         foodRepository.deleteById(food_id);
     }
+    public List<Food> findFoodWithFoodId(int foodId) {
+        return foodRepository.findFoodWithFoodId(foodId);
+    }
 
+    public List<Restaurant> findRestaurantWithRestaurantId(int restaurantId) {
+        return foodRepository.findRestaurantWithRestaurantId(restaurantId);
+    }
+
+    public List<FoodGroup> findFoodGroupWithFoodGroupId(int foodGroupId) {
+        return foodRepository.findFoodGroupWithFoodGroupId(foodGroupId);
+    }
+    public Food findByName(String name) {
+        return foodRepository.findByName(name);
+    }
 }

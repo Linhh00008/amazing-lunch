@@ -2,6 +2,8 @@ package vn.com.vhc.amazinglunch.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import vn.com.vhc.amazinglunch.entity.Customer;
+import vn.com.vhc.amazinglunch.entity.Restaurant;
 import vn.com.vhc.amazinglunch.entity.TableOrder;
 import vn.com.vhc.amazinglunch.respository.TableOrderRepository;
 
@@ -27,7 +29,21 @@ public class TableOrderService {
         }
         return null;
     }
-    public void deleteTableOrder(Integer tableOrder_id) {
+    public void deleteTableOrderById(Integer tableOrder_id) {
         tableOrderRepository.deleteById(tableOrder_id);
+    }
+
+    public TableOrder getTableOrderById(Integer customerId) {
+        return tableOrderRepository.findById(customerId).orElse(null);
+    }
+    public TableOrder getTableOrderByTableNumber(Integer numberCurrentPerson){
+        return tableOrderRepository.findByTableNumber(numberCurrentPerson);
+    }
+    public List<TableOrder> findTableOrderWithTableOrderId(int tableOrderId) {
+        return tableOrderRepository.findTableOrderWithTableOrderId(tableOrderId);
+    }
+
+    public List<Restaurant> findTableOrderWithRestaurantId(int restaurantId) {
+        return tableOrderRepository.findTableOrderWithRestaurantId(restaurantId);
     }
 }

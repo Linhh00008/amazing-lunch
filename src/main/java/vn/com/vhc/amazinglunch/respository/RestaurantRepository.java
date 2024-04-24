@@ -8,6 +8,7 @@ import vn.com.vhc.amazinglunch.entity.Restaurant;
 import vn.com.vhc.amazinglunch.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface RestaurantRepository extends JpaRepository<Restaurant, Integer> {
@@ -16,9 +17,9 @@ public interface RestaurantRepository extends JpaRepository<Restaurant, Integer>
 
     List<User> findRestaurantWithUserId(@Param("user_id") int user_id);
 
-    Restaurant findById(int restaurant_id);
+    Restaurant findById(Restaurant restaurant_id);
 
     Restaurant findByName(String name);
 
-    void delete(Restaurant restaurant_id);
+    void deleteById(Integer restaurant_id);
 }

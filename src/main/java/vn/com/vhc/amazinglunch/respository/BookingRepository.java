@@ -19,11 +19,12 @@ public interface BookingRepository extends JpaRepository<Booking, Integer> {
 
     List<TableOrder> findTableOrderWithTableOrderId(@Param("tableOrder_id") int tableOrder_id);
 
-    Optional<Booking> findBy(String name);
+    Optional<Booking> findByName(String name);
 
     Booking save(Booking booking);
 
     Booking saveAndFlush(Booking booking);
 
     void delete(Booking booking);
+
 }

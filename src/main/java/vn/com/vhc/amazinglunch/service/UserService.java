@@ -25,8 +25,11 @@ public class UserService {
     public User save(User user_id){
         return userRepository.save(user_id);
     }
-    public void deleteById(Integer user_id){
+    public void deleteUserById(Integer user_id){
         userRepository.deleteById(user_id);
     }
 
+    public User findByUsername(String username) {
+        return userRepository.findByUsername(username);
+    }
 }

@@ -9,7 +9,7 @@ import vn.com.vhc.amazinglunch.service.RestaurantService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/controller")
+@RequestMapping("/api/restaurant")
 public class RestaurantController {
     private RestaurantService restaurantService;
 
