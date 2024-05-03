@@ -1,14 +1,9 @@
 package vn.com.vhc.amazinglunch.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import vn.com.vhc.amazinglunch.entity.Order;
-import vn.com.vhc.amazinglunch.entity.TableOrder;
 import vn.com.vhc.amazinglunch.respository.FoodRepository;
 import vn.com.vhc.amazinglunch.respository.OrderRepository;
-import vn.com.vhc.amazinglunch.entity.Food;
-import vn.com.vhc.amazinglunch.entity.OrderItem;
-
 import java.util.List;
 
 @Service
