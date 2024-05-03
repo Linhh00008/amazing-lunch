@@ -3,7 +3,6 @@ package vn.com.vhc.amazinglunch.controller.api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import vn.com.vhc.amazinglunch.entity.Food;
 import vn.com.vhc.amazinglunch.entity.Order;
 import vn.com.vhc.amazinglunch.service.OrderService;
 
@@ -17,32 +16,27 @@ public class OrderController {
     // Lấy danh sách tất cả các đơn đặt hàng
     @GetMapping
     public ResponseEntity<List<Order>> getAllOrders() {
-        List<Food> orders = orderService.getAllOrders();
-        return orders;
+        List<Order> orders = orderService.getAllOrders();
+        return new ResponseEntity<>(orders, HttpStatus.OK);
     }
 
     // Lấy đơn đặt hàng bằng ID
     @GetMapping("/{order_id}")
-    public ResponseEntity<Order> getOrderById(@PathVariable("order_id") Integer order_id) {
-        Order order = orderService.addToOrder(order_id);
-        if (order != null) {
-            return new ResponseEntity<>(order, HttpStatus.OK);
-        } else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-        }
+    public Order getOrderById(@PathVariable("order_id") Integer order_id) {
+        return orderService.getOrderById(order_id);
     }
 
     // Tạo một đơn đặt hàng mới
     @PostMapping
     public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-        Order createdOrder = orderService.addToOrder(order);
+        Order createdOrder = orderService.createOrder(order);
         return new ResponseEntity<>(createdOrder, HttpStatus.CREATED);
     }
 
     // Cập nhật thông tin của một đơn đặt hàng
-    @PutMapping("/{id}")
-    public ResponseEntity<Order> updateOrder(@PathVariable("id") Long id, @RequestBody Order orderDetails) {
-        Order updatedOrder = orderService.updateOrder(id, orderDetails);
+    @PutMapping("/{order_id}")
+    public ResponseEntity<Order> updateOrder(@PathVariable("order_id") Integer order_id, @RequestBody Order orderDetails) {
+        Order updatedOrder = orderService.updateOrder(order_id, orderDetails);
         if (updatedOrder != null) {
             return new ResponseEntity<>(updatedOrder, HttpStatus.OK);
         } else {
@@ -51,9 +45,9 @@ public class OrderController {
     }
 
     // Xóa một đơn đặt hàng
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(@PathVariable("id") Long id) {
-        orderService.deleteOrder(id);
+    @DeleteMapping("/{order_id}")
+    public ResponseEntity<Void> deleteOrder(@PathVariable("order_id") Integer order_id) {
+        orderService.deleteOrder(order_id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 

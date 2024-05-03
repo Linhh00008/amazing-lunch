@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9014a16-9cf5-4877-8be4-fcce370d25c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/FoodController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/OrderItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +160,7 @@
       <workItem from="1714009917797" duration="1860000" />
       <workItem from="1714615241708" duration="6140000" />
       <workItem from="1714703104246" duration="1159000" />
+      <workItem from="1714705020812" duration="5243000" />
     </task>
     <servers />
   </component>

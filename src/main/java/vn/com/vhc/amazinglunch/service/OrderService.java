@@ -12,47 +12,40 @@ import vn.com.vhc.amazinglunch.entity.OrderItem;
 import java.util.List;
 
 @Service
-
 public class OrderService {
     private OrderRepository orderRepository;
 
     private FoodRepository foodRepository;
 
-    public List<Food> getAllOrders(){
-        return foodRepository.findAll();
-    }
-    public Order addToOrder(Integer food_id,OrderItem orderItem) {
-        boolean foodExists = foodRepository.existsById(Math.toIntExact(food_id));
-        if (!foodExists) {
-            throw new NotFoundException("Food not found");
-        }
-        //người dùng không có đơn hàng, thì tạo mới đơn hàng
-        Order userOrder = (Order) orderRepository.findOrderWithCustomerId(Math.toIntExact(food_id));
-        if(userOrder == null){
-            userOrder = new Order();
-            //thông tin khách hàng đang thiếu trong đoạn mã
-            userOrder = orderRepository.save(userOrder);
-        }
-        return userOrder;
-    }
-    public Order listAll(Integer Order){
-        return orderRepository.findAll(Order);
-    }
-    public class NotFoundException extends RuntimeException {
-        public NotFoundException(String message) {
-            super(message);
-        }
-    }
-    public List<Order> findOrderWithOrderId(int orderId) {
-        return orderRepository.findOrderWithOrderId(orderId);
+    // Get order by id
+    public Order getOrderById(Integer orderId) {
+        return orderRepository.findById(orderId).orElse(null);
     }
 
-    public List<Food> findOrderWithFoodId(int foodId) {
-        return orderRepository.findOrderWithFoodId(foodId);
+    // Create new order
+    public Order createOrder(Order order) {
+        return orderRepository.save(order);
     }
 
-    public List<TableOrder> findOrderWithTableOrderId(int tableOrderId) {
-        return orderRepository.findOrderWithTableOrderId(tableOrderId);
+    // Update existing order
+    public Order updateOrder(Integer orderId, Order orderDetails) {
+        Order existingOrder = getOrderById(orderId);
+        if (existingOrder != null) {
+            // Update order details
+            existingOrder.setUpdate_at(orderDetails.getUpdate_at());
+            // You can update other properties here as well
+            return orderRepository.save(existingOrder);
+        } else {
+            return null; // Or throw an exception as needed
+        }
     }
 
+    // Delete order
+    public void deleteOrder(Integer orderId) {
+        orderRepository.deleteById(orderId);
+    }
+
+    public List<Order> getAllOrders() {
+        return orderRepository.findAll();
+    }
 }
