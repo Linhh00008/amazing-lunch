@@ -22,4 +22,5 @@ public class Customer {
     @ManyToOne
     @JoinColumn(name = "table_order_id")
     private TableOrder tableOrder;
+
 }

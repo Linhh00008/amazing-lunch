@@ -17,14 +17,14 @@ public class OrderController {
     // Lấy danh sách tất cả các đơn đặt hàng
     @GetMapping
     public ResponseEntity<List<Order>> getAllOrders() {
-        List<Order> orders = orderService.getAllOrders();
-        return new ResponseEntity<>(orders, HttpStatus.OK);
+        List<Food> orders = orderService.getAllOrders();
+        return orders;
     }
 
     // Lấy đơn đặt hàng bằng ID
     @GetMapping("/{order_id}")
     public ResponseEntity<Order> getOrderById(@PathVariable("order_id") Integer order_id) {
-        Order order = orderService.
+        Order order = orderService.addToOrder(order_id);
         if (order != null) {
             return new ResponseEntity<>(order, HttpStatus.OK);
         } else {

@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9014a16-9cf5-4877-8be4-fcce370d25c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/FoodController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/BookingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/RestaurantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/RestaurantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/TableOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/TableOrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/RestaurantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/RestaurantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/TableOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/TableOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/RestaurantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/RestaurantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/TableOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/TableOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/OrderItem.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +158,10 @@
       <workItem from="1713799807881" duration="141000" />
       <workItem from="1713855573520" duration="9088000" />
       <workItem from="1713923832497" duration="8037000" />
-      <workItem from="1713940980610" duration="1713000" />
+      <workItem from="1713940980610" duration="5299000" />
+      <workItem from="1714009917797" duration="1860000" />
+      <workItem from="1714615241708" duration="6140000" />
+      <workItem from="1714703104246" duration="1159000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ package vn.com.vhc.amazinglunch.service;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import vn.com.vhc.amazinglunch.entity.Restaurant;
 import vn.com.vhc.amazinglunch.entity.User;
 import vn.com.vhc.amazinglunch.respository.UserRepository;
 
@@ -31,5 +32,8 @@ public class UserService {
 
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+    public List<User> findUserWithUserId(int user_id) {
+        return userRepository.findUserWithUserId(user_id);
     }
 }
