@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9014a16-9cf5-4877-8be4-fcce370d25c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/controller/api/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/respository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +157,15 @@
       <workItem from="1714009917797" duration="1860000" />
       <workItem from="1714615241708" duration="6140000" />
       <workItem from="1714703104246" duration="1159000" />
-      <workItem from="1714705020812" duration="5243000" />
+      <workItem from="1714705020812" duration="5705000" />
+      <workItem from="1715047781885" duration="822000" />
+      <workItem from="1715066602726" duration="2396000" />
+      <workItem from="1715132519798" duration="3894000" />
+      <workItem from="1715151880781" duration="910000" />
+      <workItem from="1715163694267" duration="145000" />
+      <workItem from="1715219032449" duration="2362000" />
+      <workItem from="1715669811717" duration="971000" />
+      <workItem from="1715738381136" duration="504000" />
     </task>
     <servers />
   </component>
@@ -175,7 +180,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -188,6 +199,15 @@
           <url>file://$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/entity/Restaurant.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/vn/com/vhc/amazinglunch/service/CustomerService.java</url>
+          <line>27</line>
+          <properties class="vn.com.vhc.amazinglunch.service.CustomerService" method="updateCustomer">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
